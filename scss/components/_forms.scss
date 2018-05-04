@@ -1,0 +1,18 @@
+//Forms
+
+.form__label--hidden,
+.form__input{
+  @include flex();
+}
+
+.form__input {
+  border-style: none;
+  width: 95%;
+  border-bottom: 7px solid $color-sec;
+  padding-bottom: 8px;
+  margin: 0 0 30px 10px;
+}
+
+.form__label--hidden {
+  @extend .screen-reader;
+}

@@ -1,0 +1,25 @@
+//Nav
+
+
+
+.nav__item {
+
+  &:nth-child(1) {
+  background-color: $color-sec;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  a{
+    color: $white;
+  }
+ }
+}
+
+.nav__item a {
+  @include para();
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px 16px;
+
+}

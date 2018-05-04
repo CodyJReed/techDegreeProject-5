@@ -1,0 +1,40 @@
+// Mixins
+
+//Paragraph Mixins
+
+@mixin para() {
+
+  font-family: $font-family-prim;
+  color: $color-prim;
+}
+
+@mixin margin-padding() {
+
+  margin: 0 20px;
+  padding: 20px 0;
+}
+
+@mixin fnt-wght() {
+  font-weight: 200;
+}
+
+@mixin flex() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//Media Query
+
+@mixin mq($break) {
+  @if $break == "tablet"{
+    @media(min-width: $bp-tablet){
+      @content;
+    }
+  }
+}
+
+// Flexbox
+
+@mixin fb(){
+  display: flex;
+}

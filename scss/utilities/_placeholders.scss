@@ -1,0 +1,24 @@
+// Extends
+
+//Hide Screen Reader Text
+
+.screen-reader {
+	border: 0;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+// Button Shape
+
+%button {
+
+	color: $white;
+	width: 100%;
+	margin: 5px 0;
+	padding: 8px;
+	border-radius: 5px;
+}

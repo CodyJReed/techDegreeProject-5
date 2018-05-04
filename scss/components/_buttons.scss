@@ -1,0 +1,14 @@
+//Buttons
+
+.theme__colors{
+  @extend %button;
+}
+
+@each $button, $color in $ui-button-colors {
+  .btn--#{$button} {
+    background-color: $color;
+    text-transform: uppercase;
+    font-size: large;
+    margin-bottom: 16px;
+  }
+}

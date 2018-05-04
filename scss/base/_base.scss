@@ -1,0 +1,18 @@
+// Base
+
+*{
+  box-sizing: border-box;
+  // Set final width to 1400px(for project mock-up)
+  max-width: $bp-max;
+  margin: 0 auto;
+}
+
+p {
+  @include para();
+  @include margin-padding();
+}
+
+ul {
+  @include margin-padding();
+  list-style-type: none;
+}

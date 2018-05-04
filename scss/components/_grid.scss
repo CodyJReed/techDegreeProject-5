@@ -1,0 +1,199 @@
+// Grid Items
+
+.grid__row{
+  margin-bottom: 50px;
+}
+
+//Indent Typography & Form Element headings
+.grid__col--4,
+.grid__col--8{
+
+  .headline--secondary{
+    margin-left: 7%;
+    padding-top: 15%;
+  }
+}
+
+//Increase space between Nav-bar and paragraph
+.grid__col--9{
+  padding-bottom: 10%;
+}
+
+.grid__col--12{
+
+  p {
+    padding: 0 3%;
+  }
+}
+
+//Display proper grid box colors
+@each $grid, $color in $ui-grid-colors {
+  .grid__col--#{$grid}.theme__colors {
+    background-color: $color;
+    color: $color-prim;
+  }
+}
+
+//Media Query @ 768px
+
+.grid__row:nth-of-type(1){
+  @include mq(tablet){
+    height: 200px;
+    padding-top: 50px;
+    margin: 0;
+  display: flex;
+  justify-content: space-around;
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+ }
+}
+
+.grid__row:nth-of-type(3){
+  @include mq(tablet){
+  @include fb();
+  flex-direction: row;
+  padding-top: 2%;
+  .headline--secondary{
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+  .grid__col--8{
+    width: 60%;
+    font-size: 19px;
+    p{
+      margin: 0 10% 0 5%;
+    }
+    .headline--secondary:nth-of-type(1),
+    .headline--primary{
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+  .grid__col--4{
+    width: 40%;
+    // .img--avatar{
+    //   width: 27%;
+    // }
+  }
+  .form__input {
+    width: 80%;
+  }
+  .btn--default{
+    width: 85%;
+  }
+ }
+}
+
+.grid__row:nth-of-type(4){
+  @include mq(tablet){
+    @include fb();
+    flex-direction: row;
+    .grid__col--6{
+      width: 50%;
+      .img--avatar{
+        margin-top: 64px;
+      }
+    }
+  }
+}
+
+.grid__row:nth-of-type(5){
+  @include mq(tablet){
+    .grid__col--12{
+    @include fb();
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    .theme__colors{
+      width: 15%;
+    }
+  }
+ }
+}
+
+.grid__row:nth-of-type(7){
+  @include mq(tablet){
+    @include fb;
+    flex-direction: row;
+    text-align: center;
+    .grid__col--6:nth-of-type(1){
+      margin-right: 5px;
+    }
+    .grid__col--6:nth-of-type(2){
+      margin-left: 5px;
+    }
+  }
+}
+.grid__row:nth-of-type(8){
+  @include mq(tablet){
+    @include fb;
+    flex-direction: row;
+    text-align: center;
+    .grid__col--4:nth-of-type(1){
+      margin-right: 5px;
+    }
+    .grid__col--4:nth-of-type(2){
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .grid__col--4:nth-of-type(3){
+      margin-left: 5px;
+    }
+  }
+}
+.grid__row:nth-of-type(9){
+  @include mq(tablet){
+    @include fb;
+    flex-direction: row;
+    text-align: center;
+    .grid__col--3:nth-of-type(1){
+      margin-right: 5px;
+    }
+    .grid__col--3:nth-of-type(2){
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .grid__col--3:nth-of-type(3){
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .grid__col--3:nth-of-type(4){
+      margin-left: 5px;
+    }
+  }
+}
+.grid__row:nth-of-type(10){
+  @include mq(tablet){
+    @include fb;
+    flex-direction: row;
+    text-align: center;
+    .grid__col--5{
+      width: 60%;
+      margin-right: 10px;
+    }
+  }
+}
+.grid__row:nth-of-type(11){
+  @include mq(tablet){
+    @include fb;
+    flex-direction: row;
+    text-align: center;
+    .grid__col--4{
+      width: 40%;
+      margin-left: 10px;
+    }
+  }
+}
+.grid__row:nth-of-type(12){
+  @include mq(tablet){
+    @include fb;
+    flex-direction: row;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+  }
+}

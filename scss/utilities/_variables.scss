@@ -1,0 +1,49 @@
+//Global Variables
+
+//Colors
+
+$fountain-blue :#62c4b2;
+$rolling-stone :#7a7b7c;
+$picton-blue   :#42c8f4;
+$trendy-pink   :#8f779c;
+$japonica      :#d17961;
+$fruit-salad   :#559b69;
+$golden-bell   :#ed8912;
+$eastern-blue  :#1e849f;
+
+$white: #fff;
+
+// Primary Colors
+
+$color-prim: $rolling-stone;
+$color-sec: $fountain-blue;
+
+// Color Maps
+
+$ui-button-colors: (
+'default' : $picton-blue,
+'success' : $fruit-salad,
+'error'   : $japonica,
+'warning' : $golden-bell,
+'info'    : $trendy-pink,
+);
+
+$ui-grid-colors: (
+'12' : $fountain-blue,
+'6'  : $eastern-blue,
+'4'  : $picton-blue,
+'3'  : lighten($trendy-pink, 8%),
+'5'  : lighten($fruit-salad, 8%),
+'7'  : $japonica,
+'8'  : $golden-bell,
+);
+
+// Font Stacks
+
+$font-family-prim :  Helvetica, arial, sans-serif;
+$font-family-sec  :  arial, sans-serif;
+
+// Breakpoints
+
+$bp-tablet : 768px;
+$bp-max: 1400px;
